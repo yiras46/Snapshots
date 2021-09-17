@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Snapshots</string>
+    <string name="home_title">Home</string>
+    <string name="home_add">Add</string>
+    <string name="home_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="publicar">Publicar</string>
+    <string name="title_instantanea">Título de la instantánea</string>
+    <string name="seleccione_una_foto">Seleccione una foto</string>
+    <string name="escribir_titulo">Escriba un título</string>
+    <string name="foto_subida_correctamente">Foto subida correctamente</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+    <string name="message_logout">Hasta luego...</string>
+</resources>

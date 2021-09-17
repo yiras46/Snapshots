@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "292613330372",
+    "firebase_url": "https://snapshots-e28ae-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "snapshots-e28ae",
+    "storage_bucket": "snapshots-e28ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292613330372:android:49f804490586bd9d578091",
+        "android_client_info": {
+          "package_name": "com.curso.snapshots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292613330372-tc0fpphikoeh2ns9kdvf4ndkm9csqjcq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNCoTrDkAqIOGOr-t2XoPEzpviSJpivYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292613330372-tc0fpphikoeh2ns9kdvf4ndkm9csqjcq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

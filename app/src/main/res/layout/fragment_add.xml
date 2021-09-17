@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AddFragment"
+    android:padding="@dimen/padding_default">
+
+    <ProgressBar
+        android:id="@+id/progressBarUpload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:progressBarStyleHorizontal"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBarUpload"
+        android:layout_marginTop="@dimen/margin_default"
+        android:text="@string/publicar"
+        />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnPost"
+        app:layout_constraintTop_toTopOf="@id/btnPost"
+        app:layout_constraintBottom_toBottomOf="@id/btnPost"
+        android:layout_marginEnd="@dimen/margin_default"
+        android:text="@string/seleccione_una_foto"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPost"
+        android:layout_marginTop="@dimen/margin_default"
+        android:hint="@string/title_instantanea"
+        android:visibility="gone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutTitle"
+        app:layout_constraintDimensionRatio="H, 4:3"
+        android:layout_marginTop="@dimen/margin_default"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btnSelect"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_image_search"
+        app:layout_constraintStart_toStartOf="@id/imageViewPhoto"
+        app:layout_constraintEnd_toEndOf="@id/imageViewPhoto"
+        app:layout_constraintTop_toTopOf="@id/imageViewPhoto"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewPhoto"
+        android:background="?selectableItemBackground"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
